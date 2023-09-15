@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Dashboard</title>
+    <link href="../src/App.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color:  #a6b1e0; color:  #424874;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <!-- Include your logo image here -->
+                    <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dash.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categorise.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tasks.html">Task</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- Sidebar -->
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Tasks</a>
+                    <a href="#" class="list-group-item list-group-item-action">Categories</a>
+                    <a href="#" class="list-group-item list-group-item-action">Settings</a>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <!-- Main Content -->
+                <div class="d-flex justify-content-between">
+                    <h2>Welcome to Your Task Dashboard</h2>
+                    <button class="btn btn-primary">Add Task</button>
+                </div>
+                <div class="row mt-4">
+                    <!-- Task Overview -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                Task Overview
+                            </div>
+                            <div class="card-body">
+                                <p>Total Tasks: <span id="totalTasks">10</span></p>
+                                <p>Completed Tasks: <span id="completedTasks">5</span></p>
+                                <p>Pending Tasks: <span id="pendingTasks">5</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Task List -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                Task List
+                            </div>
+                            <div class="card-body">
+                                <!-- Task list content goes here -->
+                                <ul class="list-group">
+                                    <li class="list-group-item">Task 1</li>
+                                    <li class="list-group-item">Task 2</li>
+                                    <li class="list-group-item">Task 3</li>
+                                    <!-- Add more tasks as needed -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-A7FZj7v+d5k3Z6a9x8Q7B4w5x5F0j5f8c5f5L68L3Cy5z5l5z5F5z5L5L5L5L5L5L5" crossorigin="anonymous"></script>
+</body>
+</html>
